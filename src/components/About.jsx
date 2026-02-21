@@ -29,13 +29,13 @@ export default function About() {
                     >
                         <div className="about__img about__img--main">
                             <img
-                                src="/gallery/foto1.png"
+                                src="gallery/foto1.png"
                                 alt="Cerimônia ao ar livre no Espaço Maria Luiza"
                             />
                         </div>
                         <div className="about__img about__img--accent">
                             <img
-                                src="/gallery/foto2.png"
+                                src="gallery/foto2.png"
                                 alt="Detalhes florais do espaço"
                             />
                         </div>

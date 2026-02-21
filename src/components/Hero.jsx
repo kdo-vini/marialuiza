@@ -10,7 +10,7 @@ export default function Hero() {
             {/* Drop your video file as: public/hero-video.mp4 */}
             <video
                 className="hero__video"
-                src="/video_ML_hero.mp4"
+                src="video_ML_hero.mp4"
                 autoPlay
                 muted
                 loop

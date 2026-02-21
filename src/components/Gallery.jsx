@@ -10,11 +10,11 @@ import './Gallery.css'
  * Supported formats: .jpg, .jpeg, .webp, .png
  */
 const PHOTOS = [
-    { src: '/gallery/foto1.png', caption: 'Beleza exuberante da natureza' },
-    { src: '/gallery/foto2.png', caption: 'Cenários para cerimônias inesquecíveis' },
-    { src: '/gallery/foto3.png', caption: 'Infraestrutura completa e elegante' },
-    { src: '/gallery/foto4.png', caption: 'Espaço Maria Luiza ao ar livre' },
-    { src: '/gallery/fot5.png', caption: 'Detalhes que encantam' },
+    { src: 'gallery/foto1.png', caption: 'Beleza exuberante da natureza' },
+    { src: 'gallery/foto2.png', caption: 'Cenários para cerimônias inesquecíveis' },
+    { src: 'gallery/foto3.png', caption: 'Infraestrutura completa e elegante' },
+    { src: 'gallery/foto4.png', caption: 'Espaço Maria Luiza ao ar livre' },
+    { src: 'gallery/fot5.png', caption: 'Detalhes que encantam' },
 ]
 
 export default function Gallery() {
