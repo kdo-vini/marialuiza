@@ -149,7 +149,7 @@ export default function Booking() {
 
 Podemos conversar?`
 
-        const phone = '5511999999999'
+        const phone = '5514997656869'
         window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank')
     }
 
