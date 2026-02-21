@@ -1,0 +1,189 @@
+/* ---- Awards Section ---- */
+.awards {
+    position: relative;
+    padding: var(--section-py) 0;
+    background: var(--clr-forest);
+    color: var(--clr-white);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Large watermark background text */
+.awards__bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-serif);
+    font-size: 22vw;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.03);
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+/* Header */
+.awards__tag {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--clr-champagne);
+    margin-bottom: 1rem;
+}
+
+.awards__title {
+    font-family: var(--font-serif);
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: var(--clr-white);
+    margin-bottom: 0.8rem;
+}
+
+.awards__title em {
+    font-family: var(--font-script);
+    font-style: normal;
+    font-size: 3.8rem;
+    color: var(--clr-champagne);
+}
+
+.awards__sub {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+/* Medals Row */
+.awards__medals {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 4rem 0;
+}
+
+.medal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.medal__ring {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--clr-champagne), var(--clr-gold));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-white);
+    box-shadow: 0 0 40px rgba(212, 167, 106, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+.medal:hover .medal__ring {
+    transform: scale(1.1);
+    box-shadow: 0 0 60px rgba(212, 167, 106, 0.5);
+}
+
+.medal__year {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--clr-champagne);
+}
+
+.medal__label {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Differential Cards */
+.awards__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.diff-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius-lg);
+    text-align: left;
+    transition: var(--transition);
+}
+
+.diff-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(212, 167, 106, 0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.diff-card__icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, rgba(212, 167, 106, 0.15), rgba(212, 167, 106, 0.05));
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-champagne);
+    margin-bottom: 1.5rem;
+}
+
+.diff-card__title {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--clr-white);
+    margin-bottom: 0.8rem;
+}
+
+.diff-card__text {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 992px) {
+    .awards__cards {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 2rem auto 0;
+    }
+
+    .awards__medals {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .awards__title {
+        font-size: 2.4rem;
+    }
+
+    .awards__title em {
+        font-size: 2.8rem;
+    }
+
+    .awards__medals {
+        gap: 1.5rem;
+    }
+
+    .medal__ring {
+        width: 70px;
+        height: 70px;
+    }
+}
